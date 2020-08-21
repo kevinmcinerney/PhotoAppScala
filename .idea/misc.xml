@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/PhotoAppApiUsers/pom.xml" />
+        <option value="$PROJECT_DIR$/PhotoAppApiZuulGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/PhotoAppAPIConfigServer/pom.xml" />
+        <option value="$PROJECT_DIR$/PhotoAppDiscoveryService/pom.xml" />
+        <option value="$PROJECT_DIR$/PhotoAppApiAccountManagement/pom.xml" />
+        <option value="$PROJECT_DIR$/PhotoAppApiAlbums/pom.xml" />
+        <option value="$PROJECT_DIR$/../PhotoAppApiZipkin/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../../CH08" value="1474558740000" />
+        <entry key="$PROJECT_DIR$/../../Coursera/Scala_Coursera/Course_4/Week2/stackoverflow" value="1490280402000" />
+        <entry key="$PROJECT_DIR$/../../Coursera/Scala_Coursera/Course_4/Week4/timeusage" value="1490278032000" />
+        <entry key="$PROJECT_DIR$/../../Coursera/Scala_Coursera/Course_4/wikipedia" value="1489515822000" />
+        <entry key="$PROJECT_DIR$/../../Functional Programming with Scala/barneshut" value="1475665030000" />
+        <entry key="$PROJECT_DIR$/../../Functional Programming with Scala/calculator" value="1465307346000" />
+        <entry key="$PROJECT_DIR$/../../Functional Programming with Scala/funsets" value="1462316240000" />
+        <entry key="$PROJECT_DIR$/../../Functional Programming with Scala/kmeans" value="1465238234000" />
+        <entry key="$PROJECT_DIR$/../../Functional Programming with Scala/objsets" value="1462319246000" />
+        <entry key="$PROJECT_DIR$/../../Functional Programming with Scala/reductions" value="1465237282000" />
+        <entry key="$PROJECT_DIR$/../../Functional Programming with Scala/scalashop" value="1465232294000" />
+        <entry key="$PROJECT_DIR$/../../Projects/Functional_CellWars" value="1509826610950" />
+        <entry key="$PROJECT_DIR$/../../forcomp" value="1462313212000" />
+        <entry key="$PROJECT_DIR$/../../forcomp/streams" value="1464283452000" />
+        <entry key="$PROJECT_DIR$/../../patmat" value="1462376464000" />
+        <entry key="$USER_HOME$/play-scala" value="1493157859216" />
+        <entry key="$USER_HOME$/play-scala-intro" value="1492978496279" />
+        <entry key="$USER_HOME$/reactive-stocks" value="1492964417423" />
+        <entry key="$USER_HOME$/test" value="1489010703182" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+</project>

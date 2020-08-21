@@ -1,0 +1,564 @@
+{
+	"info": {
+		"_postman_id": "fd090ccb-1860-42ec-93b5-0667be4150a2",
+		"name": "PhotoApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "userStatus",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI4YjQ1NDM3Mi1hMjFmLTQ1MWUtYTg3OS00NDQ5OGVjYTVkNGUiLCJleHAiOjE2ODMwNDQwNDR9.aSnLWiaKuBGZNAoOSYYPSwpKlbzTLM2_LCY_VBsYEJB-df_KjDl7XfiQutqjS3if2TyouYmkN6IPRp2Bs76TTQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\":\"kevin\",\n    \"lastName\":\"mcinerney\",\n    \"password\":\"123412345\",\n    \"email\": \"kevin@email.com\"\n   \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.3:8011/users-ws/users/status/check",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"3"
+					],
+					"port": "8011",
+					"path": [
+						"users-ws",
+						"users",
+						"status",
+						"check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserLogin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"kevin@email.com\",\n    \"password\":\"123412345\"\n}"
+				},
+				"url": {
+					"raw": "http://192.168.0.3:8011/users-ws/login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"3"
+					],
+					"port": "8011",
+					"path": [
+						"users-ws",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserLoginDocker",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"kevin@email.com\",\n    \"password\":\"123412345\"\n}"
+				},
+				"url": {
+					"raw": "http://192.168.0.3:8011/users-ws/login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"3"
+					],
+					"port": "8011",
+					"path": [
+						"users-ws",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\":\"kevin\",\n    \"lastName\":\"mcinerney\",\n    \"password\":\"1234312345\",\n    \"email\": \"ke3vin@email.com\"\n   \n}"
+				},
+				"url": {
+					"raw": "http://192.168.0.3:8011/users-ws/users",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"3"
+					],
+					"port": "8011",
+					"path": [
+						"users-ws",
+						"users"
+					]
+				},
+				"description": "Create"
+			},
+			"response": []
+		},
+		{
+			"name": "createUserDocker",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\":\"kevin\",\n    \"lastName\":\"mcinerney\",\n    \"password\":\"1234312345\",\n    \"email\": \"ke3vin@email.com\"\n   \n}"
+				},
+				"url": {
+					"raw": "http://192.168.0.3:8011/users-ws/users",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"3"
+					],
+					"port": "8011",
+					"path": [
+						"users-ws",
+						"users"
+					]
+				},
+				"description": "Create"
+			},
+			"response": []
+		},
+		{
+			"name": "getUser",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI4YjQ1NDM3Mi1hMjFmLTQ1MWUtYTg3OS00NDQ5OGVjYTVkNGUiLCJleHAiOjE2ODMyMDM2MTF9.hWgVPme_Eb1M-bI1C5xbJ8xQjm-peo4kH16IE0CSfAjdKjOX7LLDyy9FvJ_e-1LxXUbM1D-yRpdVUZ850sNVgA",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.0.3:8011/users-ws/users/8b454372-a21f-451e-a879-44498eca5d4e",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"3"
+					],
+					"port": "8011",
+					"path": [
+						"users-ws",
+						"users",
+						"8b454372-a21f-451e-a879-44498eca5d4e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserDocker",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI4YjQ1NDM3Mi1hMjFmLTQ1MWUtYTg3OS00NDQ5OGVjYTVkNGUiLCJleHAiOjE2ODMyMDM2MTF9.hWgVPme_Eb1M-bI1C5xbJ8xQjm-peo4kH16IE0CSfAjdKjOX7LLDyy9FvJ_e-1LxXUbM1D-yRpdVUZ850sNVgA",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.0.3:8011/users-ws/users/8b454372-a21f-451e-a879-44498eca5d4e",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"3"
+					],
+					"port": "8011",
+					"path": [
+						"users-ws",
+						"users",
+						"8b454372-a21f-451e-a879-44498eca5d4e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAlbums",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.100:41154/users/2/albums",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"100"
+					],
+					"port": "41154",
+					"path": [
+						"users",
+						"2",
+						"albums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAlbumsDocker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.100:41154/users/2/albums",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"100"
+					],
+					"port": "41154",
+					"path": [
+						"users",
+						"2",
+						"albums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserConfig",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/users-ws/default",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"users-ws",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserConfigDocker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/users-ws/default",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"users-ws",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserConfigDocker Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/users-ws/default",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"users-ws",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDiscoveryConfig",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/users-ws/default",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"users-ws",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAppConfig",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/PhotoAppAPIConfigServer/default",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"PhotoAppAPIConfigServer",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAppConfigDocker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/PhotoAppAPIConfigServer/default",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"PhotoAppAPIConfigServer",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encrypt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "kevin"
+				},
+				"url": {
+					"raw": "http://localhost:8012/encrypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"encrypt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encrypt Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "kevin"
+				},
+				"url": {
+					"raw": "http://localhost:8012/encrypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"encrypt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Decrypt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "kevin"
+				},
+				"url": {
+					"raw": "http://localhost:8012/decrypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"decrypt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RefreshBus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/actuator/bus-refresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"actuator",
+						"bus-refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RefreshBusDocker",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8012/actuator/bus-refresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8012",
+					"path": [
+						"actuator",
+						"bus-refresh"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

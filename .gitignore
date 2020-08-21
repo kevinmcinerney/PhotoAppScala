@@ -1,0 +1,4 @@
+PhotoAppAPi/PhotoAppAPIConfigServer/src/main/resources/application.properties
+application.properties
+*.log
+*.gz
